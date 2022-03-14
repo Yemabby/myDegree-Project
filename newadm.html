@@ -1,0 +1,251 @@
+<html>
+<head>
+<title>maranatha</title>
+<script language="javascript">
+function verify() 
+{
+var x=document.adminform.email.value;
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+ 
+
+            if (document.adminform.name.value == "") {
+                alert("Please give the name");
+                document.adminform.name.focus();
+                return false;
+            }
+			
+           			
+           if (document.adminform.email.value == "") {
+                alert("Please give the email");
+				document.adminform.email.focus();
+                return false;
+            }
+
+			if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+			{
+			alert("Not a valid e-mail address");
+			document.adminform.email.focus();
+			return false;
+			}
+
+			if (document.adminform.uname.value == "") {
+            alert("Please give username");
+            document.adminform.uname.focus();
+            return false;
+            }
+
+            if (document.adminform.pwd.value == "") {
+                alert("Please give Password");
+                document.adminform.pwd.focus();
+                return false;
+            }
+
+            if (document.adminform.pwd.value.lenght < 6) {
+                alert("Please give a Password more than 5 characters");
+                document.adminform.pwd.focus();
+                return false;
+            }
+
+            if (document.adminform.pwdcon.value == "") {
+                alert("Please retype your password");
+                document.adminform.pwdcon.focus();
+                return false;
+            }
+
+            if ((document.adminform.pwd.value) != (document.adminform.conpwd.value)) {
+                alert("Your password does not match");
+                document.adminform.pwdcon.value == "";
+                document.adminform.pwdcon.focus();
+                return false;
+            }
+			
+            return( true );
+        }
+</script>
+<style type="text/css">
+body{
+background:url('.jpg')
+	}
+.banner{
+	background:url('maranaata.jpg');
+	width:100%;
+	height:161px
+	}
+.sidebar{
+	color:blue;
+	width:20%;
+	height:70%;
+	background-color:#005274
+	}
+.content{
+	color:white;
+	width:80%;
+	height:70%;
+	background-color:#f9f9f9
+	}
+.bottom{
+	color:orange;
+	height:5%;
+	width:100%;
+	background-color:#000010
+	}
+.menu{
+display:inline;
+width:100%;
+height:50px;
+margin-left: 40px;
+color: #fff1343;
+}
+li{
+    margin-left: 20px;
+}
+.clear{
+clear:both;
+}
+#nav {
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 9pt;
+}
+  
+#nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+#nav a:link,
+#nav a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+  
+#nav a {
+    display: block;
+    padding: 6px 8px;
+}
+  
+#nav li {
+    float: left;
+    background-color: #000000;
+    margin-right: 1px;
+    position: relative;
+    border-radius: 5px;
+}
+ 
+#nav li li{
+    width: 160px;
+    margin-top: 1px;
+}
+ 
+#nav li:hover {
+    background-color: #555555;
+}
+#nav li li:hover {
+    background-color: #757575;
+}  
+ 
+  
+#nav ul ul  {
+    position: absolute;
+    visibility: hidden;
+}
+  
+#nav ul ul ul{
+    position: absolute;
+    left: 100%;
+    top: -2px;
+    border: solid 1px transparent;
+} 
+ 
+#nav li:hover > ul {
+    visibility: visible;
+}
+  
+.right-arrow {
+    float: right;
+}
+</style>
+</head>
+<body background=BAC.jpg>
+<table width=100% height=100% cellspacing=0 cellpadding=0>
+	<tr><td colspan=2 height=30% class=banner></td></tr>
+	<tr><td colspan=2 class=menu>
+	<div id="nav">
+	<ul>
+    <li><a href="marana.html">HOME</a></li>
+    <li><a href="Program.html">Programs</a>
+		<ul>
+            <li><a href="film.html">Films</a>
+				<ul>
+				<li><a href=film.html#fmaking>Film Making</a></li>
+				<li><a href=film.html#Dfmaking>Documentary FilmMaking</a></li>
+				<li><a href=film.html#Mvideo>Music Video</a></li>
+				</ul>
+				</li>
+            <li><a href="Producing.html">Producing</a></li>
+            <li><a href="photo.html">Photography</a></li>
+            <li><a href="3D.html">3D Animation</a></li>
+			<li><a href="cinema.html">Cinematography</a></li>
+			<li><a href="Dediting.html">Digital Editing</a></li>
+			<li><a href="Beginner.html">Beginner</a>
+				<ul>
+				<li><a href=Beginner.html#ACCP>ACCP</a></li>
+				<li><a href=Beginner.html#CComputing>Cloud Computing</a></li>
+				<li><a href=Beginner.html#WindowsApp>Windows Apps</a></li>
+				<li><a href=Beginner.html#CC++>C & C++</a></li>
+				<li><a href=Beginner.html#Java>Java</a></li>
+				<li><a href=Beginner.html#Net>.NET</a></li>
+				<li><a href=Beginner.html#DBase>Database Courses</a></li>
+				</ul>
+				</li>
+			
+		</ul></li>
+            
+	<li><a href="registration.html">Registration</a></li>
+	<li><a href="AboutUs.html">About US</a></li>
+	<li><a href="contactUs.html">Contact US</a>
+    
+	<li><a href="#">Forum </a></li>
+    <li><a href="#">Academics</a>
+	<ul>
+		<li><a href="studentAt.html">Student Attendance</a></li>
+		<li><a href="studentRes.html">Student Result</a></li>
+		<li><a href="Admin.html">Administrator</a></li>
+		</ul>
+		</li>
+		</div>
+	</td></tr>
+	<tr>
+	<td colspan=2 class=mcontent>
+	<table  align=center cellspacing=2 cellpadding=2 style="font-family: Monaco, Verdana, Sans-serif; font-size: 12px;background-color: #f9f9f9; color: #002166;">
+<tr><td colspan=2><h2><font color=orange><center> Faculty Registration Form</center></font></h2></td></tr>
+<tr><td colspan=2><h4><font color=red><center>* Mandatory</center></font></h4></td></tr>	
+<form method="POST" action="adminlog.php" name="adminform">
+<tr><td>Name</td>
+<td><input type=text name=name size=20><td>*</td></td></tr>
+<tr><td>Email Address</td>
+<td><input type=text name=email size=20></td><td>*</td></tr>
+<tr><td>Username</td>
+<td><input type=text name=uname size=20></td><td>*</td></tr>
+<tr><td>Password</td>
+<td><input type=password name=pwd size=20></td><td>*</td></tr>
+<tr><td>Confirm Password</td>
+<td><input type=password name=pwdcon size=20></td><td>*</td></tr>
+<tr><td>Enter security Question</td>
+<td><input type=text name=sec_ques size=20></td></tr>
+<tr><td>Answer To security Question</td>
+<td><input type=text name=ans_secques size=20></td></tr>
+<tr><td colspan=2><center>
+<input type=submit value=submit onClick="return (verify());"> &nbsp; &nbsp; 
+<input type=reset value=Cancel name=reset></center></td></tr></form>
+<tr><td><table><marquee direction=left color=white width=100% height=10%><font color=white>  At Maranatha Institute your convienence is our priority</font></table></marquee></td></tr>
+	
+</table>
+	</td>
+	</tr>
+	
+<tr><td colspan=2 class=bottom><center>&copy copyright reserved by samuel and amusan</center></td></tr>
+</body>
+</html>
